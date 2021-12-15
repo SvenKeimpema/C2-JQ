@@ -1,0 +1,20 @@
+		///////////Functioneel ontwerp maken | user-stories
+	voor eindopdracht 2:
+- Je maakt een formulier die in het Engels of in het Nederlands kan worden bekeken, gebruik 2 knoppen.
+- In dit formulier wordt de regex gebruikt om de velden te controleren:
+	aanhef, Naam, Adres, Woonplaats, Postcode, Geboortedatum, Nationaliteit, Beroep en Opmerkingen.
+- Als de aanhef juist wordt ingevuld (man of vrouw) veranderd de background-color tussen, roze / groen.
+- Als de geboortedatum juist is ingevuld, dan wordt de leeftijd berekent en geprint naar het scherm.
+- Geef een popup venster bij een eventuele foutmelding.
+
+
+Alle stappen worden goed bijgehouden en er wordt goed gebruik gemaakt van comments.
+Alle bestanden worden in een zip-file ingeleverd.
+
+
+		//////////Technisch ontwerp:
+minimaal windows 10+
+programmeren in vs code
+
+
+		/////////Scrum
