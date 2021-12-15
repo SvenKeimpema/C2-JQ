@@ -1,0 +1,16 @@
+.input {
+    margin-left: 20%;
+}
+
+.veld-1, .veld-2 {
+    float: left;
+    background-color: rgba(174, 176, 179, 0.8);
+    border: 1px solid grey;
+    padding: 2%;
+    width: 350px;
+    height: 500px;
+}
+
+.arrows {
+    float: left;
+}
