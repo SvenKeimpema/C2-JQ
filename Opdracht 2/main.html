@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <title></title>
+  </head>
+  <body>
+    <center>
+    <div class="contentWrapper">
+    <br><h2 class="0">eindopdracht 2</h2>
+    <div class="buttonWrapper">
+        <h4 class="1">Kies een taal</h4>
+        <button type="button" onclick="translateToDutch()">nederlands</button>
+        <button type="button" onclick="translateToEnglish()">English</button>
+    </div><br>
+    <table id="inputWrapper" border="1">
+      <thead>
+        <tr>
+          <td></td><td>input</td><td></td><td></td>
+        </tr>
+      </thead>
+        <tr>
+          <td class="2">Aanhef</td><td><input type="text" size="50px" onclick="checkAanhef()" id="aanhef"></td><td class="11">(heer / mevrouw)</td>
+        </tr><tr>
+          <td class="3">Naam</td><td><input type="text" size="50px" onclick="checkNaam()" id="naam"></td><td class="12">(voor + achternaam)</td>
+        </tr><tr>
+          <td class="4">Adres</td><td><input type="text" size="50px" onclick="checkAdres()" id="adres"></td><td class="13">(straat + huisnummer)</td>
+        </tr><tr>
+          <td class="5">Woonplaats</td><td><input type="text" size="50px" onclick="checkWoonplaats()" id="woonplaats"></td><td></td>
+        </tr><tr>
+          <td class="6">Postcode</td><td><input type="text" size="50px" onclick="checkPostcode()" id="postcode"></td><td>(1111 AA)</td>
+        </tr><tr>
+          <td class="7">Geboortedatum</td><td><input type="text" size="50px" onclick="checkGeboortedatum()" id="geboortedatum"></td><td>(dd-mm-yyyy)</td><td id="currentAge"></td>
+        </tr><tr>
+          <td class="8">Nationaliteit</td><td><input type="text" size="50px" onclick="checkNationaliteit()" id="nationaliteit"></td><td></td>
+        </tr><tr>
+          <td class="9">Beroep</td><td><input type="text" size="50px" onclick="checkBeroep()" id="beroep"></td><td></td>
+        </tr><tr>
+          <td class="10">Opmerkingen</td><td><textarea name="name" rows="8" cols="50" onclick="checkSelected()"></textarea></td>
+        </tr>
+    </table><br>
+    </div>
+    </center>
+    <script src="./main.js" charset="utf-8"></script>
+  </body>
+</html>
