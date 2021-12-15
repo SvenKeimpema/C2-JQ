@@ -1,0 +1,16 @@
+		///////////Functioneel ontwerp maken | user-stories
+	een gebruiker wil 2 eindopdrachten, voor eindodracht 1:
+- 2 divs, deze moet je kunnen vullen met namen. 
+- de divs moet je stylen met CSS en hiermee een vorm geven. zet tussen de divs in 2 knoppen 
+om de namen te schuiven hiertussen.
+- Dus je moet een input hebben, de naam die je toevoegd die komt in het linker div te staan.
+- Tip, gebruik van een array.
+
+
+Alle stappen worden goed bijgehouden en er wordt goed gebruik gemaakt van comments.
+Alle bestanden worden in een zip-file ingeleverd.
+
+
+		//////////Technisch ontwerp:
+minimaal windows 10+
+programmeren in vs code
