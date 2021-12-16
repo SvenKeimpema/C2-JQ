@@ -126,18 +126,70 @@ function checkPostcode() {
     return true;
 }
 
-function checkGeboortedatum() {
+let geboortedatum = "";
+var geboortedatumRegex = /^([0-9]{2})-([0-9]{2})-([0-9]{4})$/;
 
+function checkGeboortedatum() {
+    geboortedatum = document.querySelector("#geboortedatum").value;
+    console.log(geboortedatum);
+    checkSelected("Geboortedatum");
+    if (geboortedatumRegex.test(geboortedatum)) {
+      berekenLeeftijd(geboortedatum);
+    } else {
+      document.getElementById("currentAge").innerHTML = "";
+      oldSelected = "Geboortedatum";
+      return false;
+    }
+     
+    oldSelected = "Geboortedatum";
+    return true;
 }
+
+let nationaliteit = "";
+var nationaliteitRegex = /^([a-zA-Z]{2,50})$/;
 
 function checkNationaliteit() {
-
+    nationaliteit = document.querySelector("#nationaliteit").value;
+    console.log(nationaliteit);
+    checkSelected("Nationaliteit");
+    if (!nationaliteitRegex.test(nationaliteit)) {
+        oldSelected = "Nationaliteit";
+        return false;
+    }
+     
+    oldSelected = "Nationaliteit";
+    return true;
 }
 
-function checkBeroep() {
+let beroep = "";
+var beroepRegex = /^([a-zA-Z ]{2,50})$/;
 
+function checkBeroep() {
+    beroep = document.querySelector("#beroep").value;
+    console.log(beroep);
+    checkSelected("Beroep");
+    if (!beroepRegex.test(beroep)) {
+      oldSelected = "Beroep";
+      return false;
+    }
+
+    oldSelected = "Beroep";
+    return true;
 }
 
 function berekenLeeftijd(geboortedatum) {
+
+    parts = geboortedatum.match(/(\d{2})(-)(\d{2})(-)(\d{4})/),
+    dateObj = new Date(parts[5], parts[3]-1, parts[1]);
+
+    ageMs = Date.parse(Date()) - Date.parse(dateObj);
+    age = new Date();
+    age.setTime(ageMs);
+    ageYear = age.getFullYear() - 1970;
+
+    console.log(ageYear);
+    document.getElementById("currentAge").innerHTML = ageYear;
+    ageYear = "";
+
 
 }
